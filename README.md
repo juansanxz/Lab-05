@@ -50,5 +50,10 @@ Existen los siguientes tipos de códigos de error:
         * 501 Not Implemented: El mètodo solicitado no està soportado por el servidor.
         * 502 Bad Gateway
         * 503 Service Unavailable
-4. Al realizar la nueva conexión con telmet, se obtiene lo siguiente:
+4. Al realizar la nueva conexión con telnet, se obtiene lo siguiente:
 <img src="/img/3.png" width="80%" height="80%"/>
+
+5. Se copió del portapapeles a un archivo de texto, y se hizo desde la terminal el comando wc -c contenido.rtf, para contar
+la cantidad de caracteres de este:
+<img src="/img/4.png" width="80%" height="80%"/>
+<img src="/img/5.png" width="80%" height="80%"/>
