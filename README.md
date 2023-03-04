@@ -25,13 +25,16 @@ Donde Method serìa sustituido por alguna de estos mensajes:
 En Request-URI, la sintaxis serìa http://servidor.dominio:puerto/path, y finalmente se pone la versión de HTTP.  
 Un ejemplo sería así: `GET http://www.w3.org/pub/WWW/TheProject.html HTTP/1.1`  
 ò   
-`GET /pub/WWW/TheProject.html HTTP/1.1
-       Host: www.w3.org
-`
+```
+GET /pub/WWW/TheProject.html HTTP/1.1  
+Host: www.w3.org
+```
 
 Para el caso del laboratorio, sería de la siguiente forma:
+<img src="/img/2.png" width="80%" height="80%"/>
 
 * ¿Qué código de error sale?
+No sale un còdigo de error, pero se indica que la conexiòn fue cerrada por un host externo.
 * ¿Qué otros códigos de error existen y en qué casos se manejan?
 Existen los siguientes tipos de códigos de error:
 1. Errores de los clientes (400–499).
@@ -43,5 +46,7 @@ Dentro de estos errores, encontramos con más frecuencia los siguientes:
 * 404 Not Found: Servidor no pudo encontrar el recurso solicitado.
 2. Errores de los servidores (500–599).
 Dentro de estos errores, encontramos con más frecuencia los siguientes:
-* 500 Internal Server Error: Servidor encontró una falla que no sabe cómo resolverla
-* 501 
+* 500 Internal Server Error: Servidor encontró una falla que no sabe cómo resolverla.
+* 501 Not Implemented: El mètodo solicitado no està soportado por el servidor.
+* 502 Bad Gateway
+* 503 Service Unavailable
