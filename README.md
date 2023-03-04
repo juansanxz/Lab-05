@@ -68,5 +68,9 @@ Existen otros tipos de peticiones como las mencionadas anteriormente en el punto
 La principal diferencia se encuentra en al inicio del resultado:  
 * Con parámetro -i:
 <img src="/img/7.png" width="80%" height="80%"/>
-* Con parámetro -v:
+* Con parámetro -v, se indica el exito de la conexión:
 <img src="/img/8.png" width="80%" height="80%"/>
+
+## PARTE II. -HACIENDO UNA APLICACIÓN WEB DINÁMICA A BAJO NIVEL.
+Se crea un proyecto Maven usando el arquetipo de Aplicación web:
+<img src="/img/9.png" width="80%" height="80%"/>
