@@ -57,3 +57,16 @@ Existen los siguientes tipos de códigos de error:
 la cantidad de caracteres de este:
 <img src="/img/4.png" width="80%" height="80%"/>
 <img src="/img/5.png" width="80%" height="80%"/>
+
+¿Cuál es la diferencia entre los verbos GET y POST?¿Qué otros tipos de peticiones existen?  
+El método GET añade los datos codificados a la URI (uniform resorce identifier), mientras que el método POST añade los datos al cuerpo y no a la URI. Además, se  el método GET es usado para recuperar los datos, mientras que el método POST se utiliza para almacenar o actualizar los datos.  
+Existen otros tipos de peticiones como las mencionadas anteriormente en el punto 3.
+
+6. Sin importar que comando se usó, el contenido html era el mismo:
+<img src="/img/6.png" width="80%" height="80%"/>
+
+La principal diferencia se encuentra en al inicio del resultado:  
+* Con parámetro -i:
+<img src="/img/7.png" width="80%" height="80%"/>
+* Con parámetro -v:
+<img src="/img/8.png" width="80%" height="80%"/>
