@@ -77,7 +77,6 @@ Se crea un proyecto Maven usando el arquetipo de Aplicación web:
 
 2. Agregamos la dependencia especificada, y la sección build al archivo pom.xml:
 <img src="/img/10.png" width="80%" height="80%"/>
-<img src="/img/11.png" width="80%" height="80%"/>
 
 3. Revisando el archivo pom.xml, se observa que el servidor embebido de Tomcat está configurado pra el puerto 8080:
 <img src="/img/12.png" width="80%" height="80%"/>
