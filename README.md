@@ -129,3 +129,9 @@ Realizando las pruebas correspondientes, obtenemos lo siguiente:
 
 * Cuando se consulta un id de To-do que no existe:
 <img src="/img/22.png" width="80%" height="80%"/>
+
+## Parte III
+
+16. Se sobreescribió el método doPost en OurFirstServlet con la misma implementación del método doGet.
+
+17. Se creó el archivo index.html en la ruta indicada.
