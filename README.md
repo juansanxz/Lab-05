@@ -125,6 +125,6 @@ Para indicar en qué URL el servlet interceptará las peticiones GET.
 13. Implementamos el método doGet en OurFirstServlet, con los requerimientos especificados en el laboratorio.  
 Realizando las pruebas correspondientes, obtenemos lo siguiente:
 * Cuando se consulta un id de To-do que si existe:
-<img src="/img/21.png" width="80%" height="80%"/>
+<img src="/img/21.png" width="80%" height="80%"/>  
 * Cuando se consulta un id de To-do que no eiste:
 <img src="/img/22.png" width="80%" height="80%"/>
