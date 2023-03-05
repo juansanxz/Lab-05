@@ -22,7 +22,7 @@ Donde Method serìa sustituido por alguna de estos mensajes:
 * DELETE
 * TRACE
 * CONNECT  
-En Request-URI, la sintaxis serìa http://servidor.dominio:puerto/path, y finalmente se pone la versión de HTTP.  
+En Request-URI, la sintaxis sería `http://servidor.dominio:puerto/path`, y finalmente se pone la versión de HTTP.  
 Un ejemplo sería así: `GET http://www.w3.org/pub/WWW/TheProject.html HTTP/1.1`  
 ò   
 ```
@@ -88,8 +88,10 @@ Usamos el comando mvn tomcat7:run para desplegar la app web:
 <img src="/img/14.png" width="80%" height="80%"/>
 
 5. Abrimos el navegador, y escribimos la siguiente URL, poniendo de host a localhost, como puerto el que se indica en el pom: 8080, y como path el que tambien se definió en el pom:/lab.
-<img src="/img/15.png" width="80%" height="80%"/>
+<img src="/img/15a.png" width="80%" height="80%"/>
 
-En el browser, se obtiene lo siguiente:
-<img src="/img/16.png" width="80%" height="80%"/>
+En la ruta src/main/java/edu/eci/cvds/servlet, copiamos la clase SampleServlet.java dada en el laboratorio.
+
+En el browser, escribiendo la url que se verá a continuación, se obtiene lo siguiente:
+<img src="/img/16a.png" width="80%" height="80%"/>
 
