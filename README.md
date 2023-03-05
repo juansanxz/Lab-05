@@ -130,7 +130,7 @@ Realizando las pruebas correspondientes, obtenemos lo siguiente:
 * Cuando se consulta un id de To-do que no existe:
 <img src="/img/22.png" width="80%" height="80%"/>
 
-## Parte III
+## PARTE III
 
 16. Se sobreescribió el método doPost en OurFirstServlet con la misma implementación del método doGet.
 
