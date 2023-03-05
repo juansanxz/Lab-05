@@ -76,11 +76,15 @@ Se crea un proyecto Maven usando el arquetipo de Aplicación web:
 <img src="/img/9.png" width="100%" height="100%"/>
 
 2. Agregamos la dependencia especificada, y la sección build al archivo pom.xml:
-<img src="/img/10.png" width="80%" height="80%"/>
+<img src="/img/10a.png" width="80%" height="80%"/>
 
 3. Revisando el archivo pom.xml, se observa que el servidor embebido de Tomcat está configurado pra el puerto 8080:
 <img src="/img/12.png" width="80%" height="80%"/>
 
 4. Compilamos con mvn package:
+<img src="/img/13.png" width="80%" height="80%"/>
+
+Usamos el comando mvn tomcat7:run para desplegar la app web:
+<img src="/img/14.png" width="80%" height="80%"/>
 
 
