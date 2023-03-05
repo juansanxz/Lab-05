@@ -95,3 +95,5 @@ En la ruta src/main/java/edu/eci/cvds/servlet, copiamos la clase SampleServlet.j
 En el browser, escribiendo la url que se verá a continuación, se obtiene lo siguiente:
 <img src="/img/16a.png" width="80%" height="80%"/>
 
+6. Ahora, con la misma URL, pero enviándole de parámetro name=Juan gracia al signo "?":
+<img src="/img/17.png" width="80%" height="80%"/>
