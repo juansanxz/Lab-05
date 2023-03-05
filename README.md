@@ -97,3 +97,7 @@ En el browser, escribiendo la url que se verá a continuación, se obtiene lo si
 
 6. Ahora, con la misma URL, pero enviándole de parámetro name=Juan gracia al signo "?":
 <img src="/img/17.png" width="80%" height="80%"/>
+
+7. Buscamos en el repositorio central de mvn el artefacto gson y agregamos la dependencia:
+
+<img src="/img/18.png" width="80%" height="80%"/>
