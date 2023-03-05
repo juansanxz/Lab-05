@@ -107,3 +107,7 @@ En el browser, escribiendo la url que se verá a continuación, se obtiene lo si
 
 Si modificamos el último número de la URL, por 10, de la siguiente forma `https://jsonplaceholder.typicode.com/todos/10` se obtiene lo siguiente:
 <img src="/img/20.png" width="80%" height="80%"/>
+
+9. La clase Todo está en el proyecto.
+
+10. Agregamos la clase que nos indican en el proyecto.
