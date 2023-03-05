@@ -13,7 +13,7 @@
 3. Buscando en el link especificado en el enunciado, la sintaxis pare realizar una petición es la siguiente:  
 ` Request-Line   = Method SP Request-URI SP HTTP-Version CRLF `  
 
-Donde Method serìa sustituido por alguna de estos mensajes:
+Donde Method sería sustituido por alguna de estos mensajes:
 * OPTIONS
 * GET
 * HEAD
@@ -111,3 +111,20 @@ Si modificamos el último número de la URL, por 10, de la siguiente forma `http
 9. La clase Todo está en el proyecto.
 
 10. Agregamos la clase que nos indican en el proyecto.
+
+11. Se creó la clase OurFirtsServlet, y se añadió al proyecto.
+
+12. Se agregó la notación:
+```
+@WebServlet(
+        urlPatterns = "/OpenTheWindow"
+)
+```  
+Para indicar en qué URL el servlet interceptará las peticiones GET.
+
+13. Implementamos el método doGet en OurFirstServlet, con los requerimientos especificados en el laboratorio.  
+Realizando las pruebas correspondientes, obtenemos lo siguiente:
+* Cuando se consulta un id de To-do que si existe:
+<img src="/img/21.png" width="80%" height="80%"/>
+* Cuando se consulta un id de To-do que no eiste:
+<img src="/img/22.png" width="80%" height="80%"/>
