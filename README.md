@@ -101,3 +101,9 @@ En el browser, escribiendo la url que se verá a continuación, se obtiene lo si
 7. Buscamos en el repositorio central de mvn el artefacto gson y agregamos la dependencia:
 
 <img src="/img/18.png" width="80%" height="80%"/>
+
+8. Al ir a la dirección `https://jsonplaceholder.typicode.com/todos/1`, se observa lo siguiente:
+<img src="/img/19.png" width="80%" height="80%"/>
+
+Si modificamos el último número de la URL, por 10, de la siguiente forma `https://jsonplaceholder.typicode.com/todos/10` se obtiene lo siguiente:
+<img src="/img/20.png" width="80%" height="80%"/>
