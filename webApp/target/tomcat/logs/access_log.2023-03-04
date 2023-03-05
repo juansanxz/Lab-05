@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:46:43 -0500] "GET /helloServlet HTTP/1.1" 404 975 http-bio-8080-exec-1 14
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:46:55 -0500] "GET /helloServlet?name_David HTTP/1.1" 404 975 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:47:03 -0500] "GET /helloServlet?name=David HTTP/1.1" 404 975 http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:47:17 -0500] "GET /?name=David HTTP/1.1" 200 52 http-bio-8080-exec-5 233
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:48:03 -0500] "GET /helloServlet?name=juan HTTP/1.1" 404 975 http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:49:15 -0500] "GET /?name=David HTTP/1.1" 200 52 http-bio-8080-exec-8 2
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:49:17 -0500] "GET /? HTTP/1.1" 200 52 http-bio-8080-exec-9 1
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:49:21 -0500] "GET / HTTP/1.1" 200 52 http-bio-8080-exec-9 1
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:50:25 -0500] "GET / HTTP/1.1" 200 52 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:50:29 -0500] "GET /HelloServlet HTTP/1.1" 404 975 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:51:44 -0500] "GET /helloServlet HTTP/1.1" 404 975 http-bio-8080-exec-7 3
+0:0:0:0:0:0:0:1 - - [04/Mar/2023:19:51:57 -0500] "GET / HTTP/1.1" 200 52 http-bio-8080-exec-7 2
