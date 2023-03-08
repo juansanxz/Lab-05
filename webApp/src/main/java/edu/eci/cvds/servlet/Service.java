@@ -47,4 +47,12 @@ public class Service {
 		}
 		return stringBuilder.append("</table>").toString();
 	}
+	
+	public static String itemDoesNotExistHTML(int id) {
+		StringBuilder stringBuilder = new StringBuilder("<html>")
+				.append("<body>")
+				.append("<h2>No existe un item con id=" + String.valueOf(id) + "</h2>")
+				.append("</body>");
+		return stringBuilder.append("</html>").toString();
+	}
 }
