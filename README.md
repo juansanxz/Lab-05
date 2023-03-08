@@ -201,11 +201,12 @@ Una vez realizada la modificación del methos a get, se evidencia que no hubo ca
 1. Entrando al Maven Repository Central, se tienen las siguientes dependcias:
 * Para javax.javaee-api:
 ```
-<!-- https://mvnrepository.com/artifact/org.glassfish/javax.javaee -->
+<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 <dependency>
-    <groupId>org.glassfish</groupId>
-    <artifactId>javax.javaee</artifactId>
-    <version>10.0-b28</version>
+    <groupId>javax</groupId>
+    <artifactId>javaee-api</artifactId>
+    <version>8.0.1</version>
+    <scope>provided</scope>
 </dependency>
 ```
 
