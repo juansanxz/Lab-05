@@ -254,3 +254,17 @@ Una vez realizada la modificación del methos a get, se evidencia que no hubo ca
 * servlet: El elemento <servlet> declara el servlet, lo que incluye un nombre que otros elementos del archivo usan en el archivo (<servlet-name>), la clase que se usará para el servlet (<servlet-class>), los parámetros de inicialización y finalmente indica el orden de carga de los servlets de forma ascendente (<load-on-startup>).
 * servlet-mapping: Especifica un patrón de URL (<url-pattern>) y el nombre de un servlet (<servlet-name>) declarado para usar en solicitudes cuyas URL coincidan con el patrón.
 4. La clase se encuentra en el directorio /src/main/java/guessBean/ y tiene el nombre de BackingBean, allí se encuentran los métodos y atributos solicitados.
+5. Se evidencia que la esctrucutura para un XHTML junto con los nombres debe ser:
+
+```
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+ <h:head>
+ </h:head>
+ <h:body>
+ </h:body>
+</html>
+```
