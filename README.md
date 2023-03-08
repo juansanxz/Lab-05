@@ -87,7 +87,7 @@ Se crea un proyecto Maven usando el arquetipo de Aplicación web:
 Usamos el comando mvn tomcat7:run para desplegar la app web:
 <img src="/img/14.png" width="80%" height="80%"/>
 
-5. Abrimos el navegador, y escribimos la siguiente URL, poniendo de host a localhost, como puerto el que se indica en el pom: 8080, y como path el que tambien se definió en el pom:/lab.
+5. Abrimos el navegador, y escribimos la siguiente URL, poniendo de host a localhost, como puerto el que se indica en el pom: 8080, y como path el que tambien se definió en el pom:/ .
 <img src="/img/15a.png" width="80%" height="80%"/>
 
 En la ruta src/main/java/edu/eci/cvds/servlet, copiamos la clase SampleServlet.java dada en el laboratorio.
