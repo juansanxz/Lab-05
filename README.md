@@ -137,5 +137,50 @@ Realizando las pruebas correspondientes, obtenemos lo siguiente:
 17. Se creó el archivo index.html en la ruta indicada.
 
 18. Se creó el formulario indicado con el método post, y como acción, la ruta relativa al servlet que creamos (OurFirstServlet).
-
-
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h2>Form</h2>
+    <form action="/OpenTheWindow" method="post">
+      <label for="id">Ingrese un número:</label>
+      <input type="text" id="id" name="id"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+```
+19. Se agrega la validación de formularios con javascript.
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h2>Form</h2>
+    <form name="idForm" action="/OpenTheWindow" method="post" onsubmit="return validateForm()">
+      <label for="id">Ingrese un número:</label>
+      <input type="text" id="id" name="id"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <script>
+	function validateForm() {
+  		let x = document.forms["idForm"]["id"].value;
+  		if (isNaN(x)) {
+    		alert("Id is not a number");
+    		return false;
+  		}
+	}	
+	</script>
+  </body>
+</html>
+```
+20. 
