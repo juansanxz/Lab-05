@@ -193,3 +193,57 @@ Una vez realizada la modificación del methos a get, se evidencia que no hubo ca
 ```
 21. Para que esto funciona, la clase Service tiene un método para consumir el servicio de obtención de tareas según id que se llama getTodo, el cual es invocado por la clase servlet que creamos (OurFirstServlet), allí simplemente lo llama según el id que se envie por medio del request para proceder a mostrarlo en la página por medio del response, obteniendo el Writer y por medio del método write se muestra en pantalla. Ya para unir el formulario que realizamos en el index.html, como se especifica que el action va al Servlet que creamos, entonces al realizar submit le envía el id y muestra la fila del id esperado.
 ## PARTE IV. - FRAMEWORKS WEB MVC – JAVA SERVER FACES PRIME FACES
+1. Entrando al Maven Repository Central, se tienen las siguientes dependcias:
+* Para javax.javaee-api:
+```
+<!-- https://mvnrepository.com/artifact/org.glassfish/javax.javaee -->
+<dependency>
+    <groupId>org.glassfish</groupId>
+    <artifactId>javax.javaee</artifactId>
+    <version>10.0-b28</version>
+</dependency>
+```
+
+* Para com.sun.faces.jsf-api:
+```
+<!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-api -->
+<dependency>
+    <groupId>com.sun.faces</groupId>  
+    <artifactId>jsf-api</artifactId> 
+    <version>2.2.20</version>
+</dependency>
+```
+
+* Para com.sun.faces.jsf-impl:
+```
+<!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-impl -->
+<dependency>    
+    <groupId>com.sun.faces</groupId>    
+    <artifactId>jsf-impl</artifactId>    
+    <version>2.2.20</version>
+</dependency>
+```
+
+* Para javax.servlet.jstl:
+```
+<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+<dependency>    
+    <groupId>javax.servlet</groupId>    
+    <artifactId>jstl</artifactId>    
+    <version>1.2</version>
+</dependency>
+```
+
+* Para Primefaces:
+```
+<!-- https://mvnrepository.com/artifact/org.primefaces/primefaces -->
+<dependency>    
+    <groupId>org.primefaces</groupId>    
+    <artifactId>primefaces</artifactId>    
+    <version>12.0.0</version>
+</dependency>
+2. Se encuentra aagregado en el web.xml.
+3. Funciones de cada una de las etiquetas:
+* <welcome-file-list>: Muestra que páigna se mostrará por defecto al arrancar la aplicación.
+* <servlet>: El elemento <servlet> declara el servlet, lo que incluye un nombre que otros elementos del archivo usan en el archivo (<servlet-name>), la clase que se usará para el servlet (<servlet-class>), los parámetros de inicialización y finalmente indica el orden de carga de los servlets de forma ascendente (<load-on-startup>).
+* <servlet-mapping>: Especifica un patrón de URL (<url-pattern>) y el nombre de un servlet (<servlet-name>) declarado para usar en solicitudes cuyas URL coincidan con el patrón.
