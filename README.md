@@ -242,7 +242,8 @@ Una vez realizada la modificación del methos a get, se evidencia que no hubo ca
     <artifactId>primefaces</artifactId>    
     <version>12.0.0</version>
 </dependency>
-2. Se encuentra aagregado en el web.xml.
+```
+2. Se encuentra agregado en el web.xml.
 3. Funciones de cada una de las etiquetas:
 * <welcome-file-list>: Muestra que páigna se mostrará por defecto al arrancar la aplicación.
 * <servlet>: El elemento <servlet> declara el servlet, lo que incluye un nombre que otros elementos del archivo usan en el archivo (<servlet-name>), la clase que se usará para el servlet (<servlet-class>), los parámetros de inicialización y finalmente indica el orden de carga de los servlets de forma ascendente (<load-on-startup>).
