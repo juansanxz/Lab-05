@@ -135,3 +135,7 @@ Realizando las pruebas correspondientes, obtenemos lo siguiente:
 16. Se sobreescribió el método doPost en OurFirstServlet con la misma implementación del método doGet.
 
 17. Se creó el archivo index.html en la ruta indicada.
+
+18. Se creó el formulario indicado con el método post, y como acción, la ruta relativa al servlet que creamos (OurFirstServlet).
+
+
