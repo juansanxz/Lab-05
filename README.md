@@ -183,4 +183,7 @@ Realizando las pruebas correspondientes, obtenemos lo siguiente:
   </body>
 </html>
 ```
-20. 
+20. Luego de recompilar e ingrear a la página web, aún teniendo la acción como post.
+<img src="/img/23.png" width="80%" height="80%"/>
+Al seleccionar submit:
+<img src="/img/24.png" width="80%" height="80%"/>
