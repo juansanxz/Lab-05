@@ -1,5 +1,6 @@
 package guessBean;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import javax.faces.bean.ApplicationScoped;
@@ -20,6 +21,7 @@ public class BackingBean {
 	private int currentPrize;
 	private String gameState;
 	private Random randomNumber;
+	private ArrayList<Integer> lastAttempts;
 	
 	public BackingBean () {
 		randomNumber = new Random();
@@ -27,6 +29,7 @@ public class BackingBean {
 		attempts = 0;
 		currentPrize = 100000;
 		gameState = "No";
+		lastAttempts = new ArrayList<Integer>();
 	}
 
 	/**
@@ -36,9 +39,10 @@ public class BackingBean {
 	public void guess (int numberAttempt) {
 		attempts++;
 		if (numberToGuess == numberAttempt) {
-			gameState = "Yes your prize is " + String.valueOf(currentPrize);
+			gameState = "Si, su premio es: " + String.valueOf(currentPrize);
 		} else {
 			currentPrize -= 10000;
+			lastAttempts.add(numberAttempt);
 		}
 	}
 	
@@ -49,7 +53,8 @@ public class BackingBean {
 		setNumberToGuess();
 		attempts = 0;
 		currentPrize = 100000;
-		gameState = "No";	
+		gameState = "No";
+		lastAttempts.clear();
 	}
 	
 	/**
@@ -87,5 +92,8 @@ public class BackingBean {
 		this.gameState = gameState;
 	}
 
+	public ArrayList<Integer> getLastAttempts() {
+		return lastAttempts;
+	}
 	
 }

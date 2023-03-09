@@ -3,7 +3,8 @@
 <html xmlns="http://www.w3c.org/1999/xhtml"
        xmlns:h="http://java.sun.com/jsf/html"
        xmlns:p="http://primefaces.org/ui"
-       xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+       xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+       xmlns:f="http://java.sun.com/jsf/core">
  <h:head>
  </h:head>
  <h:body>
@@ -21,6 +22,14 @@
        	<p>Estado del premio:</p>
        	<p:outputLabel value="#{guessBean.getCurrentPrize()}"/>
        	<br/>
+       	<p>Intentos realizados:</p>
+       	<h:dataTable value="#{guessBean.getLastAttempts()}" rules="rows"  style="border:1px solid;" var="lastAttempt">
+       	<h:column>  
+			<f:facet name="header">Attempts</f:facet>  
+			<h:outputText value="#{lastAttempt}"/>  
+		</h:column> 
+		</h:dataTable>
+		<br/> 
        	<p:commandButton value="Enviar" update="guess_form" actionListener="#{guessBean.guess(numberWritten.value)}"/>
        	<br/>
        	<p:commandButton value="Reiniciar" update="guess_form" actionListener="#{guessBean.restart()}"/>
