@@ -4,9 +4,11 @@ import java.util.Random;
 
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
 
 @ManagedBean(name = "guessBean")
-@ApplicationScoped
+@SessionScoped
 /**
  * Backing-Bean of session for each user, for  "guess the number" game
  * @author Santiago Arévalo y Juan Sánchez
@@ -20,18 +22,18 @@ public class BackingBean {
 	private Random randomNumber;
 	
 	public BackingBean () {
+		randomNumber = new Random();
 		setNumberToGuess();
 		attempts = 0;
 		currentPrize = 100000;
 		gameState = "No";
-		randomNumber = new Random();
 	}
 
 	/**
 	 * Checks if user guesses the number
 	 * @param numberAttempt the number attempted by user
 	 */
-	private void guess (int numberAttempt) {
+	public void guess (int numberAttempt) {
 		attempts++;
 		if (numberToGuess == numberAttempt) {
 			gameState = "Yes your prize is " + String.valueOf(currentPrize);
@@ -43,7 +45,7 @@ public class BackingBean {
 	/**
 	 * Restarts the game
 	 */
-	private void restart() {
+	public void restart() {
 		setNumberToGuess();
 		attempts = 0;
 		currentPrize = 100000;
