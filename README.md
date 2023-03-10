@@ -358,8 +358,10 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 		}
 	}
 ```
-	c. En el método reset, se añadió la línea: `lastAttempts.clear()` para vaciar la lista que contiene los intentos.
-	d. En el archivo guess.xhtml, agregamos lo siguiente:
+	
+c. En el método reset, se añadió la línea: `lastAttempts.clear()` para vaciar la lista que contiene los intentos.  
+d. En el archivo guess.xhtml, agregamos lo siguiente:
+	
 ```
 <h:dataTable value="#{guessBean.getLastAttempts()}" rules="rows"  style="border:1px solid;" var="lastAttempt">
        	<h:column>  
@@ -368,8 +370,9 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 		</h:column> 
 		</h:dataTable>
 ``` 
+	
 
-	Al compilar nuevamente y desplegar la aplicación web, observamos la tabla:
+Al compilar nuevamente y desplegar la aplicación web, observamos la tabla:
 Al iniciar:
 
 Al realizar intentos:
