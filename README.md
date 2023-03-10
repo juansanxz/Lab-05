@@ -306,4 +306,4 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 ```
 
 9. Al ejecutar tomcat7:run e ingresando a la aplicación:
-<img src="/img/25.png" width="80%" height="80%"/>
+<img src="/img/25.png" width="50%" height="50%"/>
