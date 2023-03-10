@@ -316,3 +316,9 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 	<img src="/img/26a.png" width="30%" height="30%"/>
 	En el otro hice 1 solo intento pero se evidencia que en este se tenía guardada la misma información del anterior:
 	<img src="/img/26b.png" width="30%" height="30%"/>
+	c. Después de realizar el cambio a SessionScoped:
+	En el browser normal
+	<img src="/img/27a.png" width="30%" height="30%"/>
+	En el incognito:
+	<img src="/img/27b.png" width="30%" height="30%"/>
+	Con esto se evidencia que los valores no coincide, la diferencia entre ApplicationScoped y SessionScoped es que la segunda crea una instancia de BackingBean 	     por cada conexión, mientras que la primera crea 1 para todas las conexiones.
