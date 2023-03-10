@@ -328,12 +328,13 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 	<img src="/img/28b.png" width="30%" height="30%"/>
 	Eliminando el estilo, se ve el número que debía adivinar, en la siguiente opción:
 	<img src="/img/28c.png" width="30%" height="30%"/>
-	Al darle click en esta opción en las herramientas del desarrollador:
 	<img src="/img/28d.png" width="30%" height="30%"/>
-	Y al pasar el cursor por cualquiera de los elementos de la página, podemos ver sus componentes y estilos:
+	Al darle click en esta opción en las herramientas del desarrollador:
 	<img src="/img/28e.png" width="30%" height="30%"/>
-	Y si damos doble click, podemos ir directamente a los estilos del componente determinado, y los que hacen parte de este, estarán visibles:
+	Y al pasar el cursor por cualquiera de los elementos de la página, podemos ver sus componentes y estilos:
 	<img src="/img/28f.png" width="30%" height="30%"/>
-	Al recargar la página, los cambios se deshacen:
+	Y si damos doble click, podemos ir directamente a los estilos del componente determinado, y los que hacen parte de este, estarán visibles:
 	<img src="/img/28g.png" width="30%" height="30%"/>
+	Al recargar la página, los cambios se deshacen:
+	<img src="/img/28h.png" width="30%" height="30%"/>
 	En las herramientas del desarrollador se puede conocer mucha información sobre la aplicación, se puede experimentar con el DOM aquí es donde podemos jugar con         los colores y demás, también se pueden agregar o quitar clases, hacer pruebas en javascript en el apartado de console y analizar las peticiones HTTP
