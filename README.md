@@ -321,8 +321,9 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 	<img src="/img/27a.png" width="30%" height="30%"/>
 	En el incognito:
 	<img src="/img/27b.png" width="30%" height="30%"/>
-	Con esto se evidencia que los valores no coincide, la diferencia entre ApplicationScoped y SessionScoped es que la segunda crea una instancia de BackingBean 	     por cada conexión, mientras que la primera crea 1 para todas las conexiones.
-	d. Ingresando a las herramientas del desarrollador:
+	Con esto se evidencia que los valores no coincide, la diferencia entre ApplicationScoped y SessionScoped es que la segunda crea una instancia de BackingBean 	     por cada conexión, mientras que la primera crea 1 para todas las conexiones.  
+	
+	d. Ingresando a las herramientas del desarrollador:  
 	<img src="/img/28a.png" width="30%" height="30%"/>
 	Aquí se encuentra el elemento oculto con el número random que debe adivinar, se puede observar el display:none:
 	<img src="/img/28b.png" width="30%" height="30%"/>
@@ -337,4 +338,41 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 	<img src="/img/28g.png" width="30%" height="30%"/>
 	Al recargar la página, los cambios se deshacen:
 	<img src="/img/28h.png" width="30%" height="30%"/>
-	En las herramientas del desarrollador se puede conocer mucha información sobre la aplicación, se puede experimentar con el DOM aquí es donde podemos jugar con         los colores y demás, también se pueden agregar o quitar clases, hacer pruebas en javascript en el apartado de console y analizar las peticiones HTTP
+	En las herramientas del desarrollador se puede conocer mucha información sobre la aplicación, se puede experimentar con el DOM aquí es donde podemos jugar con         los colores y demás, también se pueden agregar o quitar clases, hacer pruebas en javascript en el apartado de console y analizar las peticiones HTTP.
+	
+11.
+	a. Se añadió en la clase BackingBean, un atributo denominado lastAttempts, que será una lista que contendrá los intentos del usuario.
+	b. El método guess quedó de la siguiente forma:
+```
+	/**
+	 * Checks if user guesses the number
+	 * @param numberAttempt the number attempted by user
+	 */
+	public void guess (int numberAttempt) {
+		attempts++;
+		if (numberToGuess == numberAttempt) {
+			gameState = "Si, su premio es: " + String.valueOf(currentPrize);
+		} else {
+			currentPrize -= 10000;
+			lastAttempts.add(numberAttempt);
+		}
+	}
+```
+	c. En el método reset, se añadió la línea: `lastAttempts.clear()` para vaciar la lista que contiene los intentos.
+	d. En el archivo guess.xhtml, agregamos lo siguiente:
+```
+<h:dataTable value="#{guessBean.getLastAttempts()}" rules="rows"  style="border:1px solid;" var="lastAttempt">
+       	<h:column>  
+			<f:facet name="header">Attempts</f:facet>  
+			<h:outputText value="#{lastAttempt}"/>  
+		</h:column> 
+		</h:dataTable>
+``` 
+
+	Al compilar nuevamente y desplegar la aplicación web, observamos la tabla:
+Al iniciar:
+
+Al realizar intentos:
+
+Al reiniciar el juego:
+
