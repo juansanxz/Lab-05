@@ -307,3 +307,8 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
 9. Al ejecutar tomcat7:run e ingresando a la aplicación:
 <img src="/img/25.png" width="30%" height="30%"/>
+10.
+	a. Abriendo la aplicación, luego de tratar de adivinar:
+	<img src="/img/25a.png" width="30%" height="30%"/>
+	b. Seleccionando reiniciar el juego:
+	<img src="/img/25b.png" width="30%" height="30%"/>
