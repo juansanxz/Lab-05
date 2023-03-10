@@ -374,8 +374,9 @@ d. En el archivo guess.xhtml, agregamos lo siguiente:
 
 Al compilar nuevamente y desplegar la aplicación web, observamos la tabla:  
 Al iniciar:
-
+<img src="/img/29a.png" width="80%" height="80%"/>  
 Al realizar intentos:
-
+<img src="/img/29b.png" width="80%" height="80%"/>  
 Al reiniciar el juego:
+<img src="/img/29c.png" width="80%" height="80%"/>  
 
