@@ -372,7 +372,7 @@ d. En el archivo guess.xhtml, agregamos lo siguiente:
 ``` 
 	
 
-Al compilar nuevamente y desplegar la aplicación web, observamos la tabla:
+Al compilar nuevamente y desplegar la aplicación web, observamos la tabla:  
 Al iniciar:
 
 Al realizar intentos:
