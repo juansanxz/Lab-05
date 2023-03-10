@@ -269,3 +269,41 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
  </h:body>
 </html>
 ```
+
+6. Agregar en el xhtml lo siguiente:
+
+```
+<h:body>
+  <h:form id="guess_form">
+  </h:form>
+</h:body>
+```
+
+7. En el formulario se le agrega lo siguiente:
+
+```
+<p:outputLabel value="#{guessBean.getNumberToGuess()}"/>        
+<p>Ingrese el número que cree que se encuentra:</p>        
+<p:inputText binding="#{numberWritten}"/>        
+<br/>        
+<p>Cantidad de intentos:</p>        
+<p:outputLabel value="#{guessBean.getAttempts()}"/>        
+<br/>        
+<p>Estado del juego:</p>        
+<p:outputLabel value="#{guessBean.getGameState()}"/>        
+<br/>        
+<p>Estado del premio:</p>        
+<p:outputLabel value="#{guessBean.getCurrentPrize()}"/>
+```
+
+8. Para los botones se agrega al formulario:
+
+```
+<br/>        
+<p:commandButton value="Enviar" update="guess_form" actionListener="#{guessBean.guess(numberWritten.value)}"/>        
+<br/>        
+<p:commandButton value="Reiniciar" update="guess_form" actionListener="#{guessBean.restart()}"/>       
+```
+
+9. Al ejecutar tomcat7:run e ingresando a la aplicación:
+<img src="/img/25.png" width="80%" height="80%"/>
