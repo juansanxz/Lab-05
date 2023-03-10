@@ -310,5 +310,9 @@ xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 10.
 	a. Abriendo la aplicación, luego de tratar de adivinar:
 	<img src="/img/25a.png" width="30%" height="30%"/>
-	b. Seleccionando reiniciar el juego:
+	Seleccionando reiniciar el juego:
 	<img src="/img/25b.png" width="30%" height="30%"/>
+	b. Al realizar los 5 intentos en el navegador normal:
+	<img src="/img/26a.png" width="30%" height="30%"/>
+	En el otro hice 1 solo intento pero se evidencia que en este se tenía guardada la misma información del anterior:
+	<img src="/img/26b.png" width="30%" height="30%"/>
